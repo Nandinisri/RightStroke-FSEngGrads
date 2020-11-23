@@ -17,5 +17,5 @@ function Re(g: string, ...names: string[]) {
     return g + " " + names.join(", ") + "!";
 }
 
-console.log(Re("Hello", "Steve", "Bill")); 
+console.log(Re("Hello", "Nandini", "Srivastava")); 
 console.log(Re("Hello"));
