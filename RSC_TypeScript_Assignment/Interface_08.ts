@@ -20,7 +20,3 @@ let e:Payment=new bank();
 console.log(e.doPayment("12,00"));
 console.log(e.getPaymentStatus("678945434345"))
 
-/*
-The 12,00 is credited to your account
-The 678945434345 reference number payment is successfully done
-*/
