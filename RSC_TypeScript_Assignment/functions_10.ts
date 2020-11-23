@@ -1,25 +1,21 @@
-//Function with default parameters
-function Greet(name: string, greeting: string = "Hello") : string {
-    return greeting + ' ' + name + '!';
+function Greetng(name: string, g: string = "Hello") : string {
+    return g + ' ' + name + '!';
 }
 
-console.log(Greet('Steve'));//Hello Steve!
-console.log(Greet('Steve', 'Hi')); //Hi Steve!
-console.log(Greet('Bill')); //Hello Bil!
+console.log(Greetng('Nandini'));
+console.log(Greetng('Nandini', 'Hi')); 
+console.log(Greetng('Srivastava')); 
 
-//Functions with  optinal parameters
-function Gree(greeting: string, name?: string ) : string {
-    return greeting + ' ' + name + '!';
+function Greetg(g: string, name?: string ) : string {
+    return g + ' ' + name + '!';
 }
 
-console.log(Gree('Hello','Steve')); //Hello Steve!
-console.log(Gree('Hi')); // Hi undefined!
+console.log(Greetg('Hello','Nandini')); 
+console.log(Greetg('Hi')); 
 
-//Function with rest parameters
-function reet(greeting: string, ...names: string[]) {
-    return greeting + " " + names.join(", ") + "!";
+function Re(g: string, ...names: string[]) {
+    return g + " " + names.join(", ") + "!";
 }
 
-console.log(reet("Hello", "Steve", "Bill")); // returns "Hello Steve, Bill!"
-
-console.log(reet("Hello"));// returns "Hello !"
+console.log(Re("Hello", "Steve", "Bill")); 
+console.log(Re("Hello"));
