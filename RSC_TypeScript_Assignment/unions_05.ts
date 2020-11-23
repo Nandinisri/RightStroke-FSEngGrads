@@ -1,6 +1,6 @@
-export class Union{
+export class Unions{
 
-    displayType=(code: (string | number))=>
+    display=(code: (string | number))=>
 {
     if(typeof(code) === "number")
         console.log('Code is number.')
@@ -9,6 +9,6 @@ export class Union{
 }
 
 }
-let u:Union = new Union()
-u.displayType(123); // Output: Code is number.
-u.displayType("ABC"); // Output: Code is string.
+let u:Unions = new Union()
+u.display(123); 
+u.display("ABC"); 
