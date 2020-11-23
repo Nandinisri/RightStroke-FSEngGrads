@@ -1,23 +1,22 @@
 export enum Days {
-    Sunday = "Sky blue",
+    Sunday = "Black",
     Monday = "White",
     Tuesday = "Grey",
-    Wednesday = "Light Green",
+    Wednesday = "Green",
     Thrusady = "Blue",
     Friday = "Red",
-    Saturday = "Yellow",
+    Saturday = "Pink",
 }
-export class Skycolor{
+export class color{
     sky=(Day:String)=>{
          for(var d in Days){
             if(Day==d)
-                console.log("The sky color in "+d+" is "+ Days[d]);
+                console.log("color in "+d+" is "+ Days[d]);
             
          }
     }
 
 }
-let s:Skycolor = new Skycolor();
-s.sky("Monday");
+let s:color = new color();
+s.sky("Sunday");
 
-//The sky color in Monday is White
