@@ -1,13 +1,13 @@
 abstract class car{
-    private car_color;
+    private color;
     private Engine;
     private  Capacity;
-    private Noofcylinders;
-    constructor(car_color:String,Engine:String,Capacity:Number,Noofcylinders:number){
-         this.car_color=car_color;
+    private cylinders;
+    constructor(color:String,Engine:String,Capacity:Number,cylinders:number){
+         this.color=color;
          this.Engine=Engine;
          this.Capacity=Capacity;
-         this.Noofcylinders=Noofcylinders;
+         this.cylinders=cylinders;
     }
     Accelarate=()=>{
         return `The car is accelerating through ${this.Engine}`;
@@ -25,8 +25,8 @@ abstract class car{
  
 class shv extends car {
     private carname:String;
-    constructor(carname:String,car_color:String,Engine:String,Capacity:Number,Noofcylinders:number){
-          super(car_color,Engine,Capacity,Noofcylinders);
+    constructor(carname:String,color:String,Engine:String,Capacity:Number,cylinders:number){
+          super(color,Engine,Capacity,cylinders);
           this.carname=carname;
     }
     startcar():string{
@@ -87,23 +87,3 @@ console.log(emp3.OpenCarLock());
 console.log(emp3.startcar());
 console.log(emp3.Accelarate());
 console.log(emp3.stopcar());
-
-/*
-The car door is opened
-The car door is closed
-The shv is started
-The car is accelerating through nd-23
-The shv is stopped
--------------------------
-The car door is opened
-The car door is closed
-The sedan is started
-The car is accelerating through Ng-23
-The sedan is stopped
--------------------------
-The car door is closed
-The car door is opened
-The Hatchback is started
-The car is accelerating through M-23
-The Hatchback is stopped
-*/  
