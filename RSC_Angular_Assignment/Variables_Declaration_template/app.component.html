@@ -1,0 +1,14 @@
+<h3>Develop a Angular project that uses template reference variable for text box, text area and select drop down control</h3>
+<div class="container">
+    <div>
+        <select #select [(ngModel)]="selectedcity" (change)="log(select.value)">
+            <option *ngFor="let city of cities" [value]="city.id">{{city.name}}</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <button (click)="Str=''">Clear</button>
+    </div>
+
+    {{Str}}
+</div>

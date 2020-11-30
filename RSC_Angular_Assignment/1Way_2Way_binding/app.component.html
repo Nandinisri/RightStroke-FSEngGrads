@@ -1,0 +1,25 @@
+<h3>1.Develop a Angular Project that show cases One way and two way data binding (Property binding and Event Binding).</h3>
+<div class="container">
+    <!-- One way data binding -->
+    <div>
+        <p>Good morning to one and all.Iam {{name}}</p> 
+    </div>
+   
+    <!-- Two way data binding -->
+    <div>
+        <label>Username:</label>
+        <input [(ngModel)]="Firstname"/>
+    </div>
+    
+    
+    <!-- Event binding -->
+    <div>
+        <button (click)="read(Firstname)">Submit</button>
+    </div>
+    
+    <!-- Property binding -->
+    <div>
+        <p>This is a lion image</p>
+        <img [src]="url" alt="" widht="500" height="300">
+    </div>
+</div>
